@@ -1,6 +1,6 @@
 {
-  "name": "react-stylable-diff",
-  "version": "2.0.0",
+  "name": "react-diffy",
+  "version": "1.0.0",
   "description": "Output differences between inputs, ready for css styling",
   "main": "dist/react-diff.js",
   "scripts": {
@@ -17,7 +17,8 @@
   ],
   "author": "David Mason <drdmason@gmail.com>",
   "contributors": [
-    "Cezary Wojtkowski <cezary@gmail.com>"
+    "Cezary Wojtkowski <cezary@gmail.com>",
+    "Karl O. <karl@karl.run>"
   ],
   "license": "MIT",
   "bugs": {
@@ -26,13 +27,14 @@
   "homepage": "https://github.com/davidmason/react-stylable-diff",
   "dependencies": {
     "diff": "^1.2.0",
-    "prop-types": "^15.6.0",
-    "react": "^16.0.0"
+    "prop-types": "^15.6.0"
+  },
+  "peerDependencies": {
+    "react": "^15.0.0 || ^16.0.0"
   },
   "devDependencies": {
     "babel": "^6.23.0",
     "babel-cli": "^6.26.0",
     "babel-plugin-transform-react-jsx": "^6.24.1"
-  },
-  "false": {}
+  }
 }

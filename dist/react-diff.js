@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import jsdiff from 'diff';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import jsdiff from "diff";
 
 const fnMap = {
-  'chars': jsdiff.diffChars,
-  'words': jsdiff.diffWords,
-  'sentences': jsdiff.diffSentences,
-  'json': jsdiff.diffJson
+  chars: jsdiff.diffChars,
+  words: jsdiff.diffWords,
+  sentences: jsdiff.diffSentences,
+  json: jsdiff.diffJson
 };
 
 /**
@@ -27,36 +27,37 @@ export default class Diff extends Component {
     const result = diff.map((part, index) => {
       if (part.added) {
         return React.createElement(
-          'ins',
+          "ins",
           { key: index },
           part.value
         );
       }
       if (part.removed) {
         return React.createElement(
-          'del',
+          "del",
           { key: index },
           part.value
         );
       }
       return React.createElement(
-        'span',
+        "span",
         { key: index },
         part.value
       );
     });
     return React.createElement(
-      'div',
-      { className: this.props.className },
+      this.props.elementType,
+      { className: this.props.className }, 
       result
     );
   }
 }
 
 Diff.defaultProps = {
-  inputA: '',
-  inputB: '',
-  type: 'chars',
-  className: 'Difference'
+  inputA: "",
+  inputB: "",
+  type: "chars",
+  className: "Difference",
+  elementType: "div"
 };
 

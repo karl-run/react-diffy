@@ -1,13 +1,13 @@
-# react-stylable-diff
+# react-diffy
 
 Output differences between two strings in a stylable form.
 
-Based on [react-diff](https://www.npmjs.com/package/react-diff). Uses the [diff](https://www.npmjs.com/package/diff) module
+Based on [react-diff](https://www.npmjs.com/package/react-stylable-diff) which is based on [react-diff](https://www.npmjs.com/package/react-diff). Uses the [diff](https://www.npmjs.com/package/diff) module.
 
 ## Installation
 
 ```
-npm install react-stylable-diff
+npm install react-diffy
 ```
 
 ## Usage
@@ -16,7 +16,7 @@ Pass text to compare as `props.inputA` and `props.inputB`:
 
 ```javascript
 import React, {Component} from 'react';
-import Diff from 'react-stylable-diff';
+import Diff from 'react-diffy';
 
 class MyComponent extends Component {
   render() {
@@ -34,7 +34,7 @@ to compare in different ways. Valid values are `'chars'`,
 
 ```javascript
 import React, {Component} from 'react';
-import Diff from 'react-stylable-diff';
+import Diff from 'react-diffy';
 
 class MyComponent extends Component {
   render() {
@@ -81,7 +81,7 @@ Here are some styles that might work:
 
 ```javascript
 import React, {Component} from 'react';
-import Diff from 'react-stylable-diff';
+import Diff from 'react-diffy';
 
 class MyComponent extends Component {
   render() {

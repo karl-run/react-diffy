@@ -1,4 +1,4 @@
-# react-diffy
+# react-diffy [![NPM version](https://img.shields.io/npm/v/react-diffy.svg?style=flat)](https://www.npmjs.com/package/react-diffy) ![Gzipped size](https://img.shields.io/badge/gzipped-3.6kb-yellowgreen.png)
 
 Output differences between two strings in a stylable form.
 
